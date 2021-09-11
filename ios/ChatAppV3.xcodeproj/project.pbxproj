@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* ChatAppV3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ChatAppV3Tests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AE43F3444A7642C6B593138E /* GMV-URWGeometric-ThinOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B121E4D4FBD94B7C89F90112 /* GMV-URWGeometric-ThinOblique.otf */; };
+		399269966E0642C4B726ABFD /* GMVURWGeometric-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 056E24AFEFD34FFDA57A1C8A /* GMVURWGeometric-Black.otf */; };
+		8D6FC4FF8BE24A40ACE91011 /* GMVURWGeometric-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = A90FB47F7D314AC6A39902B9 /* GMVURWGeometric-BlackOblique.otf */; };
+		3FD6FDDD868A40FD8E56AB01 /* GMVURWGeometric-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D90DE3B70B4435489C4447F /* GMVURWGeometric-Bold.otf */; };
+		66346A8612D34C65919489FC /* GMVURWGeometric-BoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94BA0477F30B402B85BE4167 /* GMVURWGeometric-BoldOblique.otf */; };
+		BD13B88264814F28A6C91422 /* GMVURWGeometric-ExtLtObliq.otf in Resources */ = {isa = PBXBuildFile; fileRef = F95D8378E9C94E7090D9488A /* GMVURWGeometric-ExtLtObliq.otf */; };
+		75B71C2A348F4AEB9AD87AE6 /* GMVURWGeometric-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7C8E50DAFE46B2B4C96285 /* GMVURWGeometric-ExtraBold.otf */; };
+		6195343DBB3D4601A65B3C14 /* GMVURWGeometric-ExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDAB3FDC42A64A1E93595099 /* GMVURWGeometric-ExtraBoldOblique.otf */; };
+		04E25C1BF29D43589303872E /* GMVURWGeometric-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D923B008AC8D4F169580900A /* GMVURWGeometric-ExtraLight.otf */; };
+		9BA084E587534AF1B085E16D /* GMVURWGeometric-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 597F109D611D403B9A0D9660 /* GMVURWGeometric-Heavy.otf */; };
+		25E42BBCBD844738A6D84539 /* GMVURWGeometric-HeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74FCD092D6334F608812076B /* GMVURWGeometric-HeavyOblique.otf */; };
+		26B510E1DC094AD6A6CC27A8 /* GMVURWGeometric-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B38D31D138434AF5962296D8 /* GMVURWGeometric-Light.otf */; };
+		58207A8B6CB444509E17E76C /* GMVURWGeometric-LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = A402C51FF8464EE39902B7BF /* GMVURWGeometric-LightOblique.otf */; };
+		4923839AC47D4CEBBE671D43 /* GMVURWGeometric-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8FEEADFD14DD40ABB4078AD9 /* GMVURWGeometric-Medium.otf */; };
+		F61479BE1E354CBBAD88BB7C /* GMVURWGeometric-MediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD2D841047774BB39E3DD529 /* GMVURWGeometric-MediumOblique.otf */; };
+		A0C7DBB98F8E480CA26F4F33 /* GMVURWGeometric-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 951AA4781E7643F79C118A55 /* GMVURWGeometric-Oblique.otf */; };
+		49A480FA0D46470AA65E93F4 /* GMVURWGeometric-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED03E9242F844E49BB43E0E3 /* GMVURWGeometric-Regular.otf */; };
+		E0EFCC37AFDB482EAE982A82 /* GMVURWGeometric-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C7928B49CF648E88EBDB936 /* GMVURWGeometric-SemiBold.otf */; };
+		BD16CFD303194651A6FC77DE /* GMVURWGeometric-SemiBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 149D5EE33CD54B8C9088309E /* GMVURWGeometric-SemiBoldOblique.otf */; };
+		640C4A5D82084C3985B33751 /* GMVURWGeometric-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5845F047BB546689FF7FA2A /* GMVURWGeometric-Thin.otf */; };
+		7932E5E2F4C44629A4B8C4C7 /* SFUIDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9C8E20A5ECD4782ABFC5FEF /* SFUIDisplay-Black.otf */; };
+		D7314DED7085498EB86AB755 /* SFUIDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0432135280BA4D8287EB6155 /* SFUIDisplay-Bold.ttf */; };
+		5AB622B55E8946D186DB8FB0 /* SFUIDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = A6F1598CDF5F4BB0B0A6EC7F /* SFUIDisplay-Heavy.otf */; };
+		A1DE5A37B15A447BAFD980F1 /* SFUIDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2051A697D24437DB61742AC /* SFUIDisplay-Light.ttf */; };
+		9C16384097F54B7281403024 /* SFUIDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 232A1FA8A27A4ED2B8B04855 /* SFUIDisplay-Medium.otf */; };
+		C858D710E0B44CD382BD562A /* SFUIDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6C04F1E63674E54A51D1FAB /* SFUIDisplay-Regular.otf */; };
+		613EA60F7FE54745BF0B0372 /* SFUIDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4979F81D5F784440ABAFCA34 /* SFUIDisplay-Semibold.otf */; };
+		842D269D74504F529A193DD2 /* SFUIDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E0B4A033B12494DBC4CAEF0 /* SFUIDisplay-Thin.otf */; };
+		7CFEFB6D401A43D18649B426 /* SFUIDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F527BCAC1D5A421F837A51B5 /* SFUIDisplay-Ultralight.otf */; };
+		ACD1679118A642F8863AD30E /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD2CD6B2757D49D4A4D0DC29 /* AntDesign.ttf */; };
+		009BFB75B83740ADA602E084 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21C485F223E64BB5A615D76A /* Entypo.ttf */; };
+		C040E1E1886A4953AAB3D214 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E582E826091F4C69B129220D /* EvilIcons.ttf */; };
+		198FB740FF304ECCA5D2CD01 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2272F20B06314D54A895EB79 /* Feather.ttf */; };
+		D38345813EB149EA8ADC9765 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCBBDE483BF14A68A8E91A58 /* FontAwesome.ttf */; };
+		C815BEE6624349D1845945B4 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49494C9B339C4AC199E18B98 /* FontAwesome5_Brands.ttf */; };
+		C6A49FE382AD4CABA961E94A /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34A6828BEF964ECCB122319B /* FontAwesome5_Regular.ttf */; };
+		7B688CC288E24D45BD1D5766 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 955A9FD6BD9049AA8D82F8DD /* FontAwesome5_Solid.ttf */; };
+		18EEAD7C545D4DB9BB2883CE /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CAB265045C24FD5AB417A7F /* Fontisto.ttf */; };
+		452947BF70734F4B8708AF32 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 340DB26CE5C5459D81235CE7 /* Foundation.ttf */; };
+		40C82CC9A12B403091A5ABDF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3B3C56B5007404D9C8E7253 /* Ionicons.ttf */; };
+		04FE5475730D45E1BE961CE0 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E4B576A91574BC7BC812A5D /* MaterialCommunityIcons.ttf */; };
+		6C46DDDC55D14828948708C4 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AF20279F72A4CBB9E2EC07D /* MaterialIcons.ttf */; };
+		C4AB595ED8E342A99142802F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD69CF28C11A4635A51D15B8 /* Octicons.ttf */; };
+		EE4CB4363827488C856A0617 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17E922CFC8B8463EA69C4ED0 /* SimpleLineIcons.ttf */; };
+		B209BA8EF80943BF95D61528 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07C0C3F9E18B4DA5B1846C29 /* Zocial.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = ChatAppV3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* ChatAppV3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppV3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ChatAppV3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatAppV3Tests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ChatAppV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ChatAppV3/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ChatAppV3/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ChatAppV3/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChatAppV3/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ChatAppV3/main.m; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ChatAppV3/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B121E4D4FBD94B7C89F90112 /* GMV-URWGeometric-ThinOblique.otf */ = {isa = PBXFileReference; name = "GMV-URWGeometric-ThinOblique.otf"; path = "../src/assets/fonts/GMV-URWGeometric-ThinOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		056E24AFEFD34FFDA57A1C8A /* GMVURWGeometric-Black.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Black.otf"; path = "../src/assets/fonts/GMVURWGeometric-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A90FB47F7D314AC6A39902B9 /* GMVURWGeometric-BlackOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-BlackOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-BlackOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D90DE3B70B4435489C4447F /* GMVURWGeometric-Bold.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Bold.otf"; path = "../src/assets/fonts/GMVURWGeometric-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		94BA0477F30B402B85BE4167 /* GMVURWGeometric-BoldOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-BoldOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-BoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F95D8378E9C94E7090D9488A /* GMVURWGeometric-ExtLtObliq.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-ExtLtObliq.otf"; path = "../src/assets/fonts/GMVURWGeometric-ExtLtObliq.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC7C8E50DAFE46B2B4C96285 /* GMVURWGeometric-ExtraBold.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-ExtraBold.otf"; path = "../src/assets/fonts/GMVURWGeometric-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EDAB3FDC42A64A1E93595099 /* GMVURWGeometric-ExtraBoldOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-ExtraBoldOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-ExtraBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D923B008AC8D4F169580900A /* GMVURWGeometric-ExtraLight.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-ExtraLight.otf"; path = "../src/assets/fonts/GMVURWGeometric-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		597F109D611D403B9A0D9660 /* GMVURWGeometric-Heavy.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Heavy.otf"; path = "../src/assets/fonts/GMVURWGeometric-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		74FCD092D6334F608812076B /* GMVURWGeometric-HeavyOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-HeavyOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-HeavyOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B38D31D138434AF5962296D8 /* GMVURWGeometric-Light.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Light.otf"; path = "../src/assets/fonts/GMVURWGeometric-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A402C51FF8464EE39902B7BF /* GMVURWGeometric-LightOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-LightOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-LightOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FEEADFD14DD40ABB4078AD9 /* GMVURWGeometric-Medium.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Medium.otf"; path = "../src/assets/fonts/GMVURWGeometric-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD2D841047774BB39E3DD529 /* GMVURWGeometric-MediumOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-MediumOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-MediumOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		951AA4781E7643F79C118A55 /* GMVURWGeometric-Oblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Oblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-Oblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED03E9242F844E49BB43E0E3 /* GMVURWGeometric-Regular.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Regular.otf"; path = "../src/assets/fonts/GMVURWGeometric-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C7928B49CF648E88EBDB936 /* GMVURWGeometric-SemiBold.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-SemiBold.otf"; path = "../src/assets/fonts/GMVURWGeometric-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		149D5EE33CD54B8C9088309E /* GMVURWGeometric-SemiBoldOblique.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-SemiBoldOblique.otf"; path = "../src/assets/fonts/GMVURWGeometric-SemiBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5845F047BB546689FF7FA2A /* GMVURWGeometric-Thin.otf */ = {isa = PBXFileReference; name = "GMVURWGeometric-Thin.otf"; path = "../src/assets/fonts/GMVURWGeometric-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C9C8E20A5ECD4782ABFC5FEF /* SFUIDisplay-Black.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Black.otf"; path = "../src/assets/fonts/SFUIDisplay-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0432135280BA4D8287EB6155 /* SFUIDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "SFUIDisplay-Bold.ttf"; path = "../src/assets/fonts/SFUIDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A6F1598CDF5F4BB0B0A6EC7F /* SFUIDisplay-Heavy.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Heavy.otf"; path = "../src/assets/fonts/SFUIDisplay-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B2051A697D24437DB61742AC /* SFUIDisplay-Light.ttf */ = {isa = PBXFileReference; name = "SFUIDisplay-Light.ttf"; path = "../src/assets/fonts/SFUIDisplay-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		232A1FA8A27A4ED2B8B04855 /* SFUIDisplay-Medium.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Medium.otf"; path = "../src/assets/fonts/SFUIDisplay-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C6C04F1E63674E54A51D1FAB /* SFUIDisplay-Regular.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Regular.otf"; path = "../src/assets/fonts/SFUIDisplay-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4979F81D5F784440ABAFCA34 /* SFUIDisplay-Semibold.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Semibold.otf"; path = "../src/assets/fonts/SFUIDisplay-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E0B4A033B12494DBC4CAEF0 /* SFUIDisplay-Thin.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Thin.otf"; path = "../src/assets/fonts/SFUIDisplay-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F527BCAC1D5A421F837A51B5 /* SFUIDisplay-Ultralight.otf */ = {isa = PBXFileReference; name = "SFUIDisplay-Ultralight.otf"; path = "../src/assets/fonts/SFUIDisplay-Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD2CD6B2757D49D4A4D0DC29 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21C485F223E64BB5A615D76A /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E582E826091F4C69B129220D /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2272F20B06314D54A895EB79 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCBBDE483BF14A68A8E91A58 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		49494C9B339C4AC199E18B98 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		34A6828BEF964ECCB122319B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		955A9FD6BD9049AA8D82F8DD /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4CAB265045C24FD5AB417A7F /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		340DB26CE5C5459D81235CE7 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A3B3C56B5007404D9C8E7253 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9E4B576A91574BC7BC812A5D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AF20279F72A4CBB9E2EC07D /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD69CF28C11A4635A51D15B8 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17E922CFC8B8463EA69C4ED0 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		07C0C3F9E18B4DA5B1846C29 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* ChatAppV3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* ChatAppV3Tests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = ChatAppV3Tests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* ChatAppV3 */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = ChatAppV3;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* ChatAppV3 */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* ChatAppV3Tests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				876398A3384D421F8ABF1C32 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* ChatAppV3.app */,
+				00E356EE1AD99517003FC87E /* ChatAppV3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		876398A3384D421F8ABF1C32 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B121E4D4FBD94B7C89F90112 /* GMV-URWGeometric-ThinOblique.otf */,
+				056E24AFEFD34FFDA57A1C8A /* GMVURWGeometric-Black.otf */,
+				A90FB47F7D314AC6A39902B9 /* GMVURWGeometric-BlackOblique.otf */,
+				6D90DE3B70B4435489C4447F /* GMVURWGeometric-Bold.otf */,
+				94BA0477F30B402B85BE4167 /* GMVURWGeometric-BoldOblique.otf */,
+				F95D8378E9C94E7090D9488A /* GMVURWGeometric-ExtLtObliq.otf */,
+				FC7C8E50DAFE46B2B4C96285 /* GMVURWGeometric-ExtraBold.otf */,
+				EDAB3FDC42A64A1E93595099 /* GMVURWGeometric-ExtraBoldOblique.otf */,
+				D923B008AC8D4F169580900A /* GMVURWGeometric-ExtraLight.otf */,
+				597F109D611D403B9A0D9660 /* GMVURWGeometric-Heavy.otf */,
+				74FCD092D6334F608812076B /* GMVURWGeometric-HeavyOblique.otf */,
+				B38D31D138434AF5962296D8 /* GMVURWGeometric-Light.otf */,
+				A402C51FF8464EE39902B7BF /* GMVURWGeometric-LightOblique.otf */,
+				8FEEADFD14DD40ABB4078AD9 /* GMVURWGeometric-Medium.otf */,
+				AD2D841047774BB39E3DD529 /* GMVURWGeometric-MediumOblique.otf */,
+				951AA4781E7643F79C118A55 /* GMVURWGeometric-Oblique.otf */,
+				ED03E9242F844E49BB43E0E3 /* GMVURWGeometric-Regular.otf */,
+				8C7928B49CF648E88EBDB936 /* GMVURWGeometric-SemiBold.otf */,
+				149D5EE33CD54B8C9088309E /* GMVURWGeometric-SemiBoldOblique.otf */,
+				B5845F047BB546689FF7FA2A /* GMVURWGeometric-Thin.otf */,
+				C9C8E20A5ECD4782ABFC5FEF /* SFUIDisplay-Black.otf */,
+				0432135280BA4D8287EB6155 /* SFUIDisplay-Bold.ttf */,
+				A6F1598CDF5F4BB0B0A6EC7F /* SFUIDisplay-Heavy.otf */,
+				B2051A697D24437DB61742AC /* SFUIDisplay-Light.ttf */,
+				232A1FA8A27A4ED2B8B04855 /* SFUIDisplay-Medium.otf */,
+				C6C04F1E63674E54A51D1FAB /* SFUIDisplay-Regular.otf */,
+				4979F81D5F784440ABAFCA34 /* SFUIDisplay-Semibold.otf */,
+				9E0B4A033B12494DBC4CAEF0 /* SFUIDisplay-Thin.otf */,
+				F527BCAC1D5A421F837A51B5 /* SFUIDisplay-Ultralight.otf */,
+				DD2CD6B2757D49D4A4D0DC29 /* AntDesign.ttf */,
+				21C485F223E64BB5A615D76A /* Entypo.ttf */,
+				E582E826091F4C69B129220D /* EvilIcons.ttf */,
+				2272F20B06314D54A895EB79 /* Feather.ttf */,
+				DCBBDE483BF14A68A8E91A58 /* FontAwesome.ttf */,
+				49494C9B339C4AC199E18B98 /* FontAwesome5_Brands.ttf */,
+				34A6828BEF964ECCB122319B /* FontAwesome5_Regular.ttf */,
+				955A9FD6BD9049AA8D82F8DD /* FontAwesome5_Solid.ttf */,
+				4CAB265045C24FD5AB417A7F /* Fontisto.ttf */,
+				340DB26CE5C5459D81235CE7 /* Foundation.ttf */,
+				A3B3C56B5007404D9C8E7253 /* Ionicons.ttf */,
+				9E4B576A91574BC7BC812A5D /* MaterialCommunityIcons.ttf */,
+				0AF20279F72A4CBB9E2EC07D /* MaterialIcons.ttf */,
+				AD69CF28C11A4635A51D15B8 /* Octicons.ttf */,
+				17E922CFC8B8463EA69C4ED0 /* SimpleLineIcons.ttf */,
+				07C0C3F9E18B4DA5B1846C29 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* ChatAppV3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ChatAppV3Tests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = ChatAppV3Tests;
+			productName = ChatAppV3Tests;
+			productReference = 00E356EE1AD99517003FC87E /* ChatAppV3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* ChatAppV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ChatAppV3" */;
+			buildPhases = (
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatAppV3;
+			productName = ChatAppV3;
+			productReference = 13B07F961A680F5B00A75B9A /* ChatAppV3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ChatAppV3" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* ChatAppV3 */,
+				00E356ED1AD99517003FC87E /* ChatAppV3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AE43F3444A7642C6B593138E /* GMV-URWGeometric-ThinOblique.otf in Resources */,
+				399269966E0642C4B726ABFD /* GMVURWGeometric-Black.otf in Resources */,
+				8D6FC4FF8BE24A40ACE91011 /* GMVURWGeometric-BlackOblique.otf in Resources */,
+				3FD6FDDD868A40FD8E56AB01 /* GMVURWGeometric-Bold.otf in Resources */,
+				66346A8612D34C65919489FC /* GMVURWGeometric-BoldOblique.otf in Resources */,
+				BD13B88264814F28A6C91422 /* GMVURWGeometric-ExtLtObliq.otf in Resources */,
+				75B71C2A348F4AEB9AD87AE6 /* GMVURWGeometric-ExtraBold.otf in Resources */,
+				6195343DBB3D4601A65B3C14 /* GMVURWGeometric-ExtraBoldOblique.otf in Resources */,
+				04E25C1BF29D43589303872E /* GMVURWGeometric-ExtraLight.otf in Resources */,
+				9BA084E587534AF1B085E16D /* GMVURWGeometric-Heavy.otf in Resources */,
+				25E42BBCBD844738A6D84539 /* GMVURWGeometric-HeavyOblique.otf in Resources */,
+				26B510E1DC094AD6A6CC27A8 /* GMVURWGeometric-Light.otf in Resources */,
+				58207A8B6CB444509E17E76C /* GMVURWGeometric-LightOblique.otf in Resources */,
+				4923839AC47D4CEBBE671D43 /* GMVURWGeometric-Medium.otf in Resources */,
+				F61479BE1E354CBBAD88BB7C /* GMVURWGeometric-MediumOblique.otf in Resources */,
+				A0C7DBB98F8E480CA26F4F33 /* GMVURWGeometric-Oblique.otf in Resources */,
+				49A480FA0D46470AA65E93F4 /* GMVURWGeometric-Regular.otf in Resources */,
+				E0EFCC37AFDB482EAE982A82 /* GMVURWGeometric-SemiBold.otf in Resources */,
+				BD16CFD303194651A6FC77DE /* GMVURWGeometric-SemiBoldOblique.otf in Resources */,
+				640C4A5D82084C3985B33751 /* GMVURWGeometric-Thin.otf in Resources */,
+				7932E5E2F4C44629A4B8C4C7 /* SFUIDisplay-Black.otf in Resources */,
+				D7314DED7085498EB86AB755 /* SFUIDisplay-Bold.ttf in Resources */,
+				5AB622B55E8946D186DB8FB0 /* SFUIDisplay-Heavy.otf in Resources */,
+				A1DE5A37B15A447BAFD980F1 /* SFUIDisplay-Light.ttf in Resources */,
+				9C16384097F54B7281403024 /* SFUIDisplay-Medium.otf in Resources */,
+				C858D710E0B44CD382BD562A /* SFUIDisplay-Regular.otf in Resources */,
+				613EA60F7FE54745BF0B0372 /* SFUIDisplay-Semibold.otf in Resources */,
+				842D269D74504F529A193DD2 /* SFUIDisplay-Thin.otf in Resources */,
+				7CFEFB6D401A43D18649B426 /* SFUIDisplay-Ultralight.otf in Resources */,
+				ACD1679118A642F8863AD30E /* AntDesign.ttf in Resources */,
+				009BFB75B83740ADA602E084 /* Entypo.ttf in Resources */,
+				C040E1E1886A4953AAB3D214 /* EvilIcons.ttf in Resources */,
+				198FB740FF304ECCA5D2CD01 /* Feather.ttf in Resources */,
+				D38345813EB149EA8ADC9765 /* FontAwesome.ttf in Resources */,
+				C815BEE6624349D1845945B4 /* FontAwesome5_Brands.ttf in Resources */,
+				C6A49FE382AD4CABA961E94A /* FontAwesome5_Regular.ttf in Resources */,
+				7B688CC288E24D45BD1D5766 /* FontAwesome5_Solid.ttf in Resources */,
+				18EEAD7C545D4DB9BB2883CE /* Fontisto.ttf in Resources */,
+				452947BF70734F4B8708AF32 /* Foundation.ttf in Resources */,
+				40C82CC9A12B403091A5ABDF /* Ionicons.ttf in Resources */,
+				04FE5475730D45E1BE961CE0 /* MaterialCommunityIcons.ttf in Resources */,
+				6C46DDDC55D14828948708C4 /* MaterialIcons.ttf in Resources */,
+				C4AB595ED8E342A99142802F /* Octicons.ttf in Resources */,
+				EE4CB4363827488C856A0617 /* SimpleLineIcons.ttf in Resources */,
+				B209BA8EF80943BF95D61528 /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* ChatAppV3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* ChatAppV3 */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChatAppV3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatAppV3.app/ChatAppV3";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = ChatAppV3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatAppV3.app/ChatAppV3";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ChatAppV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ChatAppV3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = ChatAppV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ChatAppV3;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ChatAppV3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ChatAppV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ChatAppV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
