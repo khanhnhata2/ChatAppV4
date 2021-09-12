@@ -19,6 +19,8 @@ export default function authStack() {
         options={{
           headerShown: true,
           headerStyle: {backgroundColor: _color.BACKGROUND},
+          headerTitleAlign: 'center',
+          headerTintColor: 'white',
         }}
       />
     </AuthStack.Navigator>

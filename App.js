@@ -15,7 +15,7 @@ export default function App() {
             <StatusBar
               translucent={true}
               backgroundColor={'transparent'}
-              barStyle={'dark-content'}
+              barStyle={'light-content'}
             />
             <Navigation />
             {/* <LinearGradient

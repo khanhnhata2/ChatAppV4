@@ -26,6 +26,7 @@ export default function RegisterScreen(props) {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [secondPassword, setSecondPassword] = useState('');
 
   const register = () => {
     auth()
@@ -40,7 +41,29 @@ export default function RegisterScreen(props) {
       })
       .catch(error => alert(error.message));
   };
-
+  const checkConditionPassword = () => {
+    if (!userName.trim()) {
+      alert('Please enter your username');
+      return;
+    }
+    if (!email.trim()) {
+      alert('Please enter your email');
+      return;
+    }
+    if (!password.trim()) {
+      alert('Please enter your password');
+      return;
+    }
+    if (!secondPassword.trim()) {
+      alert('Please confirm your password!!');
+      return;
+    }
+    if (password !== secondPassword) {
+      alert('not the same password');
+      return;
+    }
+    register();
+  };
   return (
     <SafeAreaView style={{flex: 1}}>
       <ScrollView style={styles.screenStyle}>
@@ -70,12 +93,12 @@ export default function RegisterScreen(props) {
               placeholder="Confirm password"
               style={[styles.textInput, textStyles.sub_headline_16]}
               secureTextEntry={true}
-              onChangeText={setPassword}
+              onChangeText={setSecondPassword}
             />
             <TouchableOpacity
               style={[styles.btnContainer, {backgroundColor: 'black'}]}
               onPress={() => {
-                register();
+                checkConditionPassword();
               }}>
               <Text style={[textStyles.button, {color: 'white'}]}>
                 {'Register'}

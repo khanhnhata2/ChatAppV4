@@ -6,16 +6,23 @@ export default function LogoTitle(props) {
     <View style={styles.headerStyle}>
       <Image
         source={require('../../assets/images/logo.png')}
+        style={{width: 70, height: 70}}
+      />
+      {/* <Image
+        source={require('../../assets/images/logo.png')}
         style={{width: 60, height: 55}}
       />
-      <Text style={textStyles.headline_20}>{'ChatApp '}</Text>
+      <Image
+        source={require('../../assets/images/logo.png')}
+        style={{width: 60, height: 55}}
+      /> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   headerStyle: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
   },

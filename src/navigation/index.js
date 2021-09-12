@@ -58,8 +58,12 @@ export default function Navigation() {
             name={router.mainStack}
             component={mainStack}
             options={{
-              headerShown: true,
-              headerStyle: {backgroundColor: _color.BACKGROUND},
+              headerShown: false,
+              // headerTitle: props => <LogoTitle {...props} />,
+              // headerStyle: {
+              //   backgroundColor: _color.BACKGROUND,
+              // },
+              // headerTitleAlign: 'center',
             }}
           />
         );

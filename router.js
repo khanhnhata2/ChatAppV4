@@ -7,5 +7,7 @@ export default {
   register: 'Register',
 
   chat: 'Chat ',
+  chatStack: 'ChatStack',
+  newChat: 'New Chat',
   profile: 'Profile',
 };

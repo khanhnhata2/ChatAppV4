@@ -1,29 +1,23 @@
 import React from 'react';
-import {Image, Platform} from 'react-native';
+import {Image, Platform, TouchableOpacity, Text, Button} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import ChatScreen from '../../container/main/Chat';
 import ProfileScreen from '../../container/main/Profile';
 import _color from '../../../styles/_color';
 import router from '../../../router';
+import LogoTitle from '../../components/LogoTitle';
+import ChatStack from './ChatStack';
 
 const Tab = createBottomTabNavigator();
-export default function authStack() {
+export default function mainStack(props) {
   return (
     <Tab.Navigator
-      // screenOptions={{
-      //   tabBarVisible: true,
-      //   headerShown: false,
-      //   tabBarStyle: {
-      //     backgroundColor: _color.BACKGROUND,
-      //     height: 80,
-      //   },
-      // }}
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
 
-          if (route.name === router.chat) {
+          if (route.name === router.chatStack) {
             iconName = focused ? 'chatbubbles' : 'chatbubbles-outline';
           } else if (route.name === router.profile) {
             iconName = focused ? 'menu' : 'menu-outline';
@@ -37,28 +31,20 @@ export default function authStack() {
           fontFamily: 'GMVURWGeometric-Bold',
           fontSize: 14,
         },
-        tabBarInactiveTintColor: 'gray',
+        tabBarInactiveTintColor: '#8c8c8c',
         tabBarVisible: true,
-        headerShown: false,
         tabBarStyle: {
           backgroundColor: _color.BACKGROUND,
           height: 80,
         },
+        headerShown: false,
+        // headerTitle: props => <LogoTitle {...props} />,
+        // headerStyle: {
+        //   backgroundColor: _color.BACKGROUND,
+        // },
+        // headerTitleAlign: 'center',
       })}>
-      <Tab.Screen
-        name={router.chat}
-        component={ChatScreen}
-        // options={{
-        //   tabBarButton: props => (
-        //     <Image
-        //       label="chat"
-        //       labelSelection="chatSelection"
-        //       name={router.chat}
-        //       {...props}
-        //     />
-        //   ),
-        // }}
-      />
+      <Tab.Screen name={router.chatStack} component={ChatStack} />
       <Tab.Screen
         name={router.profile}
         component={ProfileScreen}
