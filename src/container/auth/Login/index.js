@@ -13,14 +13,27 @@ import {
   Platform,
   TouchableOpacity,
 } from 'react-native';
-import _color from '../../../styles/_color';
-import {dimensions} from '../../../styles/base';
+import _color from '../../../../styles/_color';
+import {dimensions} from '../../../../styles/base';
 import {useDispatch} from 'react-redux';
-import {saveUser} from '../../redux/slice/authSlice';
-import router from '../../../router';
+import {saveUser, saveUser2} from '../../../redux/slice/authSlice';
+import router from '../../../../router';
+import auth from '@react-native-firebase/auth';
 export default function LoginScreen(props) {
   const dispatch = useDispatch();
-  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const login = () => {
+    auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(userCredential => {
+        var user = userCredential.user;
+        console.log('day la user', user);
+      })
+      .catch(error => {
+        alert(error.message);
+      });
+  };
   return (
     <SafeAreaView style={{flex: 1}}>
       <KeyboardAvoidingView
@@ -29,21 +42,33 @@ export default function LoginScreen(props) {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} style={{flex: 1}}>
           <View style={styles.inner}>
             <Image
-              source={require('../../assets/images/logo.png')}
+              source={require('../../../assets/images/logo.png')}
               style={styles.logoStyle}
             />
             <TextInput
-              placeholder="Username"
+              placeholder="Email"
               style={styles.textInput}
-              onChangeText={setUserName}
+              onChangeText={setEmail}
+            />
+            <TextInput
+              placeholder="Password"
+              style={styles.textInput}
+              secureTextEntry={true}
+              onChangeText={setPassword}
             />
             <TouchableOpacity
-              style={styles.btnContainer}
+              style={[styles.btnContainer, {backgroundColor: 'black'}]}
               onPress={() => {
-                dispatch(saveUser(userName));
-                // props.navigation.navigate(router.mainStack);
+                login();
               }}>
-              <Text style={{color: 'white'}}>Tiếp tục</Text>
+              <Text style={{color: 'white'}}>{'Login'}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.btnContainer, {backgroundColor: 'white'}]}
+              onPress={() => {
+                props.navigation.navigate(router.register);
+              }}>
+              <Text style={{color: 'black'}}>{'Register'}</Text>
             </TouchableOpacity>
           </View>
         </TouchableWithoutFeedback>
@@ -71,14 +96,13 @@ const styles = StyleSheet.create({
     height: 40,
     borderColor: '#000000',
     borderBottomWidth: 0.8,
-    marginBottom: 36,
+    marginBottom: 25,
   },
   btnContainer: {
     width: dimensions.fullWidth * 0.3,
     borderRadius: 15,
     height: 40,
-    backgroundColor: 'black',
-    marginTop: 8,
+    marginVertical: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },

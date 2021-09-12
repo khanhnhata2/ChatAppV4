@@ -7,20 +7,32 @@ import authStack from './authStack/';
 import mainStack from './mainStack';
 import LogoTitle from '../components/LogoTitle';
 import _color from '../../styles/_color';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import auth from '@react-native-firebase/auth';
+import {saveUser} from '../redux/slice/authSlice';
 
 const Stack = createNativeStackNavigator();
 export default function Navigation() {
+  const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
-  const userName = useSelector(state => state.auth.userName);
+  const user = useSelector(state => state.auth.user);
+
+  const [initializing, setInitializing] = useState(true);
+  // const [user, setUser] = useState();
+  function onAuthStateChanged(user) {
+    dispatch(saveUser(user));
+    if (initializing) setInitializing(false);
+  }
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setLoading(true);
       clearTimeout(timeOut);
     }, 2000);
+    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber; // unsubscribe on unmount
   }, []);
   const processNavigation = () => {
-    console.log('day la userName', userName);
+    console.log('day la userNameFirebase', user);
     if (!loading) {
       console.log('vô splash');
       return (
@@ -31,7 +43,8 @@ export default function Navigation() {
         />
       );
     } else {
-      if (userName === '' || userName === null) {
+      // if (userName === '' || userName === null) {
+      if (!user) {
         return (
           <Stack.Screen
             name={router.authStack}

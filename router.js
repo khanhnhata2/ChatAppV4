@@ -4,6 +4,7 @@ export default {
   authStack: 'AuthStack',
   mainStack: 'Chat',
   login: 'LoginScreen',
+  register: 'Register',
 
   chat: 'Chat ',
   profile: 'Profile',

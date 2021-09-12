@@ -16,7 +16,9 @@ import {
 import {dimensions} from '../../../../styles/base';
 import {useSelector} from 'react-redux';
 export default function ChatScreen() {
-  const userName = useSelector(state => state.auth.userName);
+  // const userName = useSelector(state => state.auth.userName);
+  // const user = useSelector(state => state.auth.user);
+  // console.log('day la user2', user);
   return (
     <SafeAreaView style={{flex: 1}}>
       <KeyboardAvoidingView
@@ -30,7 +32,8 @@ export default function ChatScreen() {
             />
             <TextInput placeholder="Username" style={styles.textInput} />
             <TouchableOpacity style={styles.btnContainer}>
-              <Text style={{color: 'white'}}>{userName}</Text>
+              {/* <Text style={{color: 'white'}}>{user.userName}</Text>
+              <Text style={{color: 'white'}}>{user.password}</Text> */}
             </TouchableOpacity>
           </View>
         </TouchableWithoutFeedback>

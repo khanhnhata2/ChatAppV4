@@ -13,6 +13,7 @@ import {
   Platform,
   TouchableOpacity,
 } from 'react-native';
+import auth from '@react-native-firebase/auth';
 import {CommonActions} from '@react-navigation/native';
 import _color from '../../../../styles/_color';
 import {dimensions} from '../../../../styles/base';
@@ -36,7 +37,10 @@ export default function ProfileScreen(props) {
             <TouchableOpacity
               style={styles.btnContainer}
               onPress={() => {
-                dispatch(saveUser(null));
+                // dispatch(saveUser(null));
+                auth()
+                  .signOut()
+                  .then(() => console.log('User signed out!'));
                 // props.navigation.reset({
                 //   index: 0,
                 //   routes: [{name: router.authStack}],
