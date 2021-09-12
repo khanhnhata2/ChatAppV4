@@ -19,6 +19,7 @@ import {useDispatch} from 'react-redux';
 import {saveUser, saveUser2} from '../../../redux/slice/authSlice';
 import router from '../../../../router';
 import auth from '@react-native-firebase/auth';
+import textStyles from './../../../../styles/textStyles';
 export default function LoginScreen(props) {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
@@ -47,12 +48,12 @@ export default function LoginScreen(props) {
             />
             <TextInput
               placeholder="Email"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               onChangeText={setEmail}
             />
             <TextInput
               placeholder="Password"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               secureTextEntry={true}
               onChangeText={setPassword}
             />
@@ -61,14 +62,18 @@ export default function LoginScreen(props) {
               onPress={() => {
                 login();
               }}>
-              <Text style={{color: 'white'}}>{'Login'}</Text>
+              <Text style={[textStyles.button, {color: 'white'}]}>
+                {'Login'}
+              </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.btnContainer, {backgroundColor: 'white'}]}
               onPress={() => {
                 props.navigation.navigate(router.register);
               }}>
-              <Text style={{color: 'black'}}>{'Register'}</Text>
+              <Text style={[textStyles.button, {color: 'black'}]}>
+                {'Register'}
+              </Text>
             </TouchableOpacity>
           </View>
         </TouchableWithoutFeedback>
@@ -92,7 +97,7 @@ const styles = StyleSheet.create({
     height: 120,
   },
   textInput: {
-    width: dimensions.fullWidth * 0.4,
+    width: dimensions.fullWidth * 0.7,
     height: 40,
     borderColor: '#000000',
     borderBottomWidth: 0.8,
@@ -101,7 +106,7 @@ const styles = StyleSheet.create({
   btnContainer: {
     width: dimensions.fullWidth * 0.3,
     borderRadius: 15,
-    height: 40,
+    height: 45,
     marginVertical: 8,
     justifyContent: 'center',
     alignItems: 'center',

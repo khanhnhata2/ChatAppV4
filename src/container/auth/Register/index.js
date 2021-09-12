@@ -6,13 +6,12 @@ import {
   StyleSheet,
   StatusBar,
   Text,
-  KeyboardAvoidingView,
+  ScrollView,
   Keyboard,
   TouchableWithoutFeedback,
   TextInput,
   Platform,
   TouchableOpacity,
-  ScrollView,
 } from 'react-native';
 import _color from '../../../../styles/_color';
 import {dimensions} from '../../../../styles/base';
@@ -21,6 +20,7 @@ import {saveUser} from '../../../redux/slice/authSlice';
 import router from '../../../../router';
 // import {auth} from '../../../../firebase';
 import auth from '@react-native-firebase/auth';
+import textStyles from '../../../../styles/textStyles';
 export default function RegisterScreen(props) {
   const dispatch = useDispatch();
   const [userName, setUserName] = useState('');
@@ -40,11 +40,10 @@ export default function RegisterScreen(props) {
       })
       .catch(error => alert(error.message));
   };
+
   return (
     <SafeAreaView style={{flex: 1}}>
-      <KeyboardAvoidingView
-        style={styles.screenStyle}
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+      <ScrollView style={styles.screenStyle}>
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} style={{flex: 1}}>
           <View style={styles.inner}>
             <Image
@@ -53,38 +52,38 @@ export default function RegisterScreen(props) {
             />
             <TextInput
               placeholder="Username"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               onChangeText={setUserName}
             />
             <TextInput
               placeholder="Email"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               onChangeText={setEmail}
             />
             <TextInput
               placeholder="Password"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               secureTextEntry={true}
               onChangeText={setPassword}
             />
             <TextInput
               placeholder="Confirm password"
-              style={styles.textInput}
+              style={[styles.textInput, textStyles.sub_headline_16]}
               secureTextEntry={true}
               onChangeText={setPassword}
             />
             <TouchableOpacity
               style={[styles.btnContainer, {backgroundColor: 'black'}]}
               onPress={() => {
-                // dispatch(saveUser(userName));
                 register();
-                // props.navigation.navigate(router.login);
               }}>
-              <Text style={{color: 'white'}}>{'Register'}</Text>
+              <Text style={[textStyles.button, {color: 'white'}]}>
+                {'Register'}
+              </Text>
             </TouchableOpacity>
           </View>
         </TouchableWithoutFeedback>
-      </KeyboardAvoidingView>
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
   btnContainer: {
     width: dimensions.fullWidth * 0.3,
     borderRadius: 15,
-    height: 40,
+    height: 45,
     marginVertical: 8,
     justifyContent: 'center',
     alignItems: 'center',
